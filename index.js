@@ -5,6 +5,8 @@ var http = require("http"),
     app = express(),
     port = process.env.PORT || 5000;
 
+app.use(express.logger());
+
 app.get('/', function(request, response) {
     console.log("Getting " + request.query.q);
     jsdom.env(request.query.q, 
