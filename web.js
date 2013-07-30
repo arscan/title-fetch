@@ -1,5 +1,4 @@
 var http = require("http"),
-    superagent = require("superagent"),
     express = require("express")
     jsdom = require("jsdom")
     app = express(),
@@ -16,9 +15,6 @@ app.get('/', function(request, response) {
             response.header('Access-Control-Allow-Origin:', '*');
             response.send({title: window.document.title});
     });
-    // superagent.get(request.query.q).end(function(error,res){
-    //     response.send(res.text);
-    // });
 });
 
 
