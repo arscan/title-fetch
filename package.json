@@ -1,0 +1,13 @@
+{ "name": "title-fetch",
+  "version": "0.1.0",
+  "author": "Rob Scanlon <robscanlon@gmail.com>",
+  "description": "Grabs the title of a page located at a URL and returns it in a JSON response",
+  "dependencies": {
+    "express": "*",
+    "jsdom": "*"
+  },
+  "main": "./index.js",
+  "engines": { "node": ">0.6.0" },
+  "keywords": [ "title-fetch"],
+  "repository": { "type": "git", "url": "http://github.com/arscan/title-fetch/title-fetch.git" }
+}
