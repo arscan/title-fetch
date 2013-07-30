@@ -5,6 +5,7 @@ var http = require("http"),
     port = process.env.PORT || 5000;
 
 app.use(express.logger());
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
     console.log("Getting " + request.query.q);
